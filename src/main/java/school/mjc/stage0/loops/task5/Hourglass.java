@@ -18,11 +18,7 @@ public class Hourglass {
             for (int j = i; j < height + 2 - i; j++) {
                 System.out.print("8");
             }
-            if (i == 1) {
-                continue;
-            } else {
-                System.out.println();
-            }
+            System.out.println();
         }
     }
     public static void main(String[] args){
