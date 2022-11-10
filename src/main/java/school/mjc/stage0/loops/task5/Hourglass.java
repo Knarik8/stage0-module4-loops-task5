@@ -10,20 +10,22 @@ public class Hourglass {
                 System.out.print(8);
             }
             System.out.println();
-
         }
-        for (int i = height / 2; i >= 1; i--){
+        for (int i = height / 2; i >= 1; i--) {
             for (int k = 1; k <= i - 1; k++) {
                 System.out.print(" ");
             }
-            for (int j = i; j < height + 2 - i; j++)
-            {
+            for (int j = i; j < height + 2 - i; j++) {
                 System.out.print("8");
             }
-            System.out.println();
+            if (i == 1) {
+                continue;
+            } else {
+                System.out.println();
+            }
         }
     }
     public static void main(String[] args){
-        printHourglassOfGivenSize(6);
+        printHourglassOfGivenSize(5);
     }
 }
